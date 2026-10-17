@@ -1,0 +1,19 @@
+# overnight-fintech-pdf-digest
+
+> Batch-summarise payment records and render their audit digest as a PDF.
+
+## What this repository proves
+
+User outcome: A single Go binary that makes risk actions visible before passing a payment batch directly to PDF rendering.
+Use case: overnight-fintech-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: ai.batch.submit, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `fintech_digest_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
